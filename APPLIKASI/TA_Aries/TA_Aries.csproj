@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A23C08B1-CFE5-4C78-A9FF-A817A09796F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TA_Aries</RootNamespace>
+    <AssemblyName>TA_Aries</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="formAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAbout.Designer.cs">
+      <DependentUpon>formAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formArsipKeluar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formArsipKeluar.Designer.cs">
+      <DependentUpon>formArsipKeluar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formArsipMasuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formArsipMasuk.Designer.cs">
+      <DependentUpon>formArsipMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSurat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSurat.Designer.cs">
+      <DependentUpon>formSurat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSuratKeluar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSuratKeluar.Designer.cs">
+      <DependentUpon>formSuratKeluar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSuratMasuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSuratMasuk.Designer.cs">
+      <DependentUpon>formSuratMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUser.Designer.cs">
+      <DependentUpon>formUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUtama.Designer.cs">
+      <DependentUpon>formUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Koneksi.cs" />
+    <Compile Include="Laporan\LapSuratKeluar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\LapSuratKeluar.Designer.cs">
+      <DependentUpon>LapSuratKeluar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\LapSuratMasuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\LapSuratMasuk.Designer.cs">
+      <DependentUpon>LapSuratMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formAbout.resx">
+      <DependentUpon>formAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formArsipKeluar.resx">
+      <DependentUpon>formArsipKeluar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formArsipMasuk.resx">
+      <DependentUpon>formArsipMasuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSurat.resx">
+      <DependentUpon>formSurat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSuratKeluar.resx">
+      <DependentUpon>formSuratKeluar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSuratMasuk.resx">
+      <DependentUpon>formSuratMasuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUser.resx">
+      <DependentUpon>formUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUtama.resx">
+      <DependentUpon>formUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\LapSuratKeluar.resx">
+      <DependentUpon>LapSuratKeluar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\LapSuratMasuk.resx">
+      <DependentUpon>LapSuratMasuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Report1.rdlc" />
+    <EmbeddedResource Include="Laporan\Report2.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\HOME.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\object189808340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\object306933354.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\object941077567.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\Log-Out-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\Email-Download-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\Email-Reply-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
